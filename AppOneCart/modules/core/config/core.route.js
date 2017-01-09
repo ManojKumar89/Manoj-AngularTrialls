@@ -24,10 +24,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'modules/login/login.view.html'
         })
 
+        .state('logout', {
+            url: '/logout',
+            templateUrl: 'modules/login/login.view.html'
+        })
+
         .state('signup', {
             url: '/signup',
             templateUrl: 'modules/signup/signup.view.html'
         })
+
+        
 
            $urlRouterProvider.otherwise('/login');
 });
