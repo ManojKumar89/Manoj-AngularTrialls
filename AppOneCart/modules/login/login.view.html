@@ -1,17 +1,11 @@
-<div class="form-layout">
-  <div class="container-fluid">
-    <div class="row">
-     <div class= "col-md-12">
-    <input type="text" placeholder="Username" /> 
+<div class="login-page">
+<!-- <div class="login-page" ng-controller="loginController()"> -->
+    <div class="login-form form-layout">
+      <input type="text" ng-model="username" placeholder="username"/>
+      <input type="password" ng-model="password" placeholder="password"/>
+      <a ui-sref="home" class="btn btn-success btn-login">Login</a>
+      <p class="message">Not registered? <a ui-sref="signup">Create an account</a></p>
     </div>
-         <div class= "col-md-12"> 
-    <input type="password" placeholder="password"/"> 
-    </div>
-         <div class="col-md-12 col-centered"> 
-    <a ui-sref="home" class="btn btn-success">Login</a>
-    </div>
-    <div class="pull-right">
-    <a ui-sref="signup" class="btn btn-primary">Signup</a>
-    </div>
-
 </div>
+
+
